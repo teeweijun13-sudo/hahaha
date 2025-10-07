@@ -27,7 +27,7 @@
             "channelFormatId": "index-grouped",
             "selectorChannelFormatIndexGrouped": {
               "selectChannelNames": ".module-tab-items .module-tab-item, .swiper-wrapper .module-tab-item",
-              "matchChannelName": "^(?<ch>.+?)(?:<small.*?</small>)?$",
+              "matchChannelName": "^(?:<span>)?([^<]+?)(?:</span>)?(?:<small.*?</small>)?$",
               "selectEpisodeLists": ".module-list.sort-list.tab-list.play-tab-list",
               "selectEpisodesFromList": ".module-play-list-link",
               "selectEpisodeLinksFromList": "",
