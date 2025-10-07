@@ -40,13 +40,13 @@
            "matchVideo": {
   "enableNestedUrl": true,
   "matchNestedUrl": "^.+(m3u8\\.php|player\\.php).+",
-  "matchVideoUrl": "(https?:\\/\\/dammu\\.yhdmyk\\.com\\/m3u8\\.php\\?url=[^&]+)",
+  "matchVideoUrl": "(https?:\\/\\/dammu\\.yhdmjx\\.com\\/m3u8\\.php\\?url=[^&]+)",
   "skipValidation": true,
   "cookies": "",
   "addHeadersToVideo": {
-    "referer": "https://dammu.yhdmyk.com/",
+    "referer": "https://dammu.yhdmjx.com/",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-    "origin": "https://dammu.yhdmyk.com"
+    "origin": "https://dammu.yhdmjx.com"
   }
 }
           }
