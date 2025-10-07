@@ -24,7 +24,6 @@
               "preferShorterName": true
             },
 
-            // 直接进入第一个播放链接，跳过频道选择
             "channelFormatId": "no-channel",
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link:first-child",
