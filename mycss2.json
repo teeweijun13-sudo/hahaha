@@ -15,7 +15,6 @@
             "searchUseSubjectNamesCount": 1,
             "rawBaseUrl": "https://www.295k.cc",
             "requestInterval": 3000,
-
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
               "selectNames": ".module-card-item .module-card-item-title a",
@@ -23,37 +22,35 @@
               "selectCovers": ".module-card-item img[data-original]",
               "preferShorterName": true
             },
-
             "channelFormatId": "no-channel",
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link",
               "selectEpisodeLinks": "",
               "matchEpisodeSortFromName": "第(\\d+)集"
             },
-
             "defaultResolution": "1080P",
             "defaultSubtitleLanguage": "CHS",
             "onlySupportsPlayers": [],
             "filterByEpisodeSort": true,
             "filterBySubjectName": true,
-
             "selectMedia": {
               "distinguishSubjectName": true,
               "distinguishChannelName": true
             },
-
             "matchVideo": {
-  "enableNestedUrl": true,
-  "matchNestedUrl": "^.+(m3u8\\.php|player\\.php).+",
-  "matchVideoUrl": "(https?:\\/\\/danmu\\.yhdmjx\\.com\\/m3u8\\.php\\?url=[^&]+)",
-  "cookies": "",
-  "addHeadersToVideo": {
-    "referer": "https://www.295k.cc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-  },
-          "tier": 0
+              "enableNestedUrl": true,
+              "matchNestedUrl": "^.+(m3u8\\.php|player\\.php).+",
+              "matchVideoUrl": "(https?:\\/\\/danmu\\.yhdmjx\\.com\\/m3u8\\.php\\?url=[^&]+)",
+              "cookies": "",
+              "addHeadersToVideo": {
+                "referer": "https://www.295k.cc",
+                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+              },
+              "tier": 0
+            }
+          }
         }
       }
-        }
+    ]
   }
 }
