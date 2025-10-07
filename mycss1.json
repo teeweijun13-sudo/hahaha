@@ -18,8 +18,9 @@
 
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".module-item .module-poster-item-title",
-              "selectLinks": ".module-item a",
+              "selectNames": ".module-card-item .module-card-item-title",
+              "selectLinks": ".module-card-item a",
+              "selectCovers": ".module-card-item img[data-original]",
               "preferShorterName": true
             },
 
@@ -53,7 +54,7 @@
             "matchVideo": {
               "enableNestedUrl": true,
               "matchNestedUrl": "$^",
-              "matchVideoUrl": "(m3u8|mp4|bilivideo.com|player.*\\.php\\?url=)",
+              "matchVideoUrl": "(m3u8|mp4|player.*\\.php\\?url=)",
               "cookies": "",
               "addHeadersToVideo": {
                 "referer": "https://www.295k.cc",
@@ -67,4 +68,3 @@
     ]
   }
 }
-
