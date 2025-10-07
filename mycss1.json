@@ -6,7 +6,7 @@
         "version": 2,
         "arguments": {
           "name": "295k动漫",
-          "description": "采集295k动漫网站视频",
+          "description": "采集295k动漫网站视频，兼容 PC/移动端",
           "iconUrl": "https://www.857yhw.com/857.png",
           "searchConfig": {
             "searchUrl": "https://www.295k.cc/search/-------------.html?wd={keyword}",
@@ -15,54 +15,47 @@
             "searchUseSubjectNamesCount": 1,
             "rawBaseUrl": "https://www.295k.cc",
             "requestInterval": 3000,
-
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".module-card-item .module-card-item-title a",
+              "selectNames": ".module-card-item-title a",
               "selectLinks": ".module-card-item a.module-card-item-poster",
               "selectCovers": ".module-card-item img[data-original]",
               "preferShorterName": true
             },
-
             "channelFormatId": "index-grouped",
             "selectorChannelFormatIndexGrouped": {
-              "selectChannelNames": ".module-tab-items .module-tab-item",
+              "selectChannelNames": ".module-tab-items .module-tab-item, .module-tab-items a",
               "matchChannelName": "^(?<ch>.+?)$",
               "selectEpisodeLists": ".module-list.sort-list.tab-list",
               "selectEpisodesFromList": ".module-play-list-link",
               "selectEpisodeLinksFromList": "",
               "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(全集)"
             },
-
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link",
               "selectEpisodeLinks": "",
               "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(全集)"
             },
-
             "defaultResolution": "1080P",
             "defaultSubtitleLanguage": "CHS",
             "onlySupportsPlayers": [],
             "filterByEpisodeSort": true,
             "filterBySubjectName": true,
-
             "selectMedia": {
               "distinguishSubjectName": true,
               "distinguishChannelName": true
             },
-
             "matchVideo": {
-  "enableNestedUrl": true,
-  "matchNestedUrl": ".module-play-list-link",
-  "matchVideoUrl": "#playleft",
-  "parseVideoFromIframeSrc": true,
-  "cookies": "",
-  "addHeadersToVideo": {
-    "referer": "https://www.295k.cc",
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-  }
-}
-
+              "enableNestedUrl": true,
+              "matchNestedUrl": ".module-play-list-link",
+              "matchVideoUrl": "(#playleft|m3u8|mp4|player.*\\.php\\?url=)",
+              "parseVideoFromIframeSrc": true,
+              "cookies": "",
+              "addHeadersToVideo": {
+                "referer": "https://www.295k.cc",
+                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+              }
+            }
           },
           "tier": 0
         }
@@ -70,4 +63,3 @@
     ]
   }
 }
-
