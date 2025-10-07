@@ -7,9 +7,9 @@
         "arguments": {
           "name": "295k动漫",
           "description": "采集295k动漫网站视频",
-          "iconUrl": "https://www.295k.cc/template/295k/favicon.ico",
+          "iconUrl": "https://www.857yhw.com/857.png",
           "searchConfig": {
-            "searchUrl": "https://www.295k.cc/index.php/vod/search.html?wd={keyword}",
+            "searchUrl": "https://www.295k.cc/search/-------------.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
             "searchRemoveSpecial": true,
             "searchUseSubjectNamesCount": 1,
@@ -67,3 +67,4 @@
     ]
   }
 }
+
