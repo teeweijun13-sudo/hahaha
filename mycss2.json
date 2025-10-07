@@ -5,37 +5,37 @@
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
-          "name": "295k动漫",
-          "description": "采集295k动漫网站视频",
-          "iconUrl": "https://www.857yhw.com/857.png",
+          "name": "AGE 动漫",
+          "description": "采集 agedm.io 网站视频资源",
+          "iconUrl": "https://cdn.aiqingyu1314.com/age/statics/images/logo.png?v=2025062101",
           "searchConfig": {
-            "searchUrl": "https://www.295k.cc/search/-------------.html?wd={keyword}",
+            "searchUrl": "https://www.agedm.io/search?query={keyword}",
             "searchUseOnlyFirstWord": true,
             "searchRemoveSpecial": true,
             "searchUseSubjectNamesCount": 1,
-            "rawBaseUrl": "https://www.295k.cc",
+            "rawBaseUrl": "https://www.agedm.io",
             "requestInterval": 3000,
 
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".module-card-item .module-card-item-title",
-              "selectLinks": ".module-card-item a",
-              "selectCovers": ".module-card-item img[data-original]",
+              "selectNames": ".card-title a",
+              "selectLinks": ".card-title a",
+              "selectCovers": ".video_thumbs",
               "preferShorterName": true
             },
 
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
-              "selectChannelNames": ".module-tab-item",
+              "selectChannelNames": ".movurl .tabs .tab",
               "matchChannelName": "^(?<ch>.+?)$",
-              "selectEpisodeLists": ".module-play-list",
+              "selectEpisodeLists": ".movurl .movurl_list",
               "selectEpisodesFromList": "a",
               "selectEpisodeLinksFromList": "",
               "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])"
             },
 
             "selectorChannelFormatNoChannel": {
-              "selectEpisodes": ".module-play-list a",
+              "selectEpisodes": ".movurl a",
               "selectEpisodeLinks": "",
               "matchEpisodeSortFromName": "(第\\s*(?<ep>.+)\\s*[话集])|1080P"
             },
@@ -54,10 +54,10 @@
             "matchVideo": {
               "enableNestedUrl": true,
               "matchNestedUrl": "$^",
-              "matchVideoUrl": "(m3u8|mp4|player.*\\.php\\?url=)",
+              "matchVideoUrl": "(m3u8|mp4|player.*\\.php\\?url=|agecdn|.m3u8)",
               "cookies": "",
               "addHeadersToVideo": {
-                "referer": "https://www.295k.cc",
+                "referer": "https://www.agedm.io",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
               }
             }
