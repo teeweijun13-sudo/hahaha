@@ -26,18 +26,18 @@
 
             "channelFormatId": "index-grouped",
             "selectorChannelFormatIndexGrouped": {
-              "selectChannelNames": ".module-tab-items .module-tab-item, .hisSwiper .module-tab-item",
+              "selectChannelNames": ".module-tab-items .module-tab-item, .swiper-wrapper .module-tab-item, .hisSwiper .module-tab-item",
               "matchChannelName": "^(?:<span>)?([^<]+?)(?:</span>)?(?:<small.*?</small>)?$",
-              "selectEpisodeLists": ".his-tab-list",
+              "selectEpisodeLists": ".his-tab-list, .play-tab-list",
               "selectEpisodesFromList": ".module-play-list-link",
               "selectEpisodeLinksFromList": "",
-              "matchEpisodeSortFromName": "第(?<ep>[\\d.]+)集"
+              "matchEpisodeSortFromName": "^(全集|HD高清|第\\s*(?<ep>[\\d.]+)\\s*[话集]|\\d+)$"
             },
 
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link",
               "selectEpisodeLinks": "",
-              "matchEpisodeSortFromName": "第(?<ep>[\\d.]+)集"
+              "matchEpisodeSortFromName": "^(全集|HD高清|第\\s*(?<ep>[\\d.]+)\\s*[话集]|\\d+)$"
             },
 
             "defaultResolution": "1080P",
@@ -54,7 +54,7 @@
             "matchVideo": {
               "enableNestedUrl": true,
               "matchNestedUrl": "^.+(m3u8\\.php|player\\.php).+",
-              "matchVideoUrl": "(m3u8\\.php\\?url=|url=.*?m3u8|(?:http[s]?://[^\\s]+\\.m3u8[^\\s]*))",
+              "matchVideoUrl": "(m3u8\\.php\\?url=|url=.*?m3u8|player_aaaa.*?\"url\":\"([^\"]+)\")",
               "cookies": "",
               "addHeadersToVideo": {
                 "referer": "https://www.295k.cc",
