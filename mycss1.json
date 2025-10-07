@@ -53,12 +53,17 @@
 
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "$^",
-              "matchVideoUrl": "(m3u8|mp4|player.*\\.php\\?url=)",
+              "matchNestedUrl": ".*",
+              "matchVideoUrl": "(https?:\\/\\/[^\\s\"']+\\.(mp4|m3u8))",
               "cookies": "",
               "addHeadersToVideo": {
-                "referer": "https://www.295k.cc",
-                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+                "referer": "https://www.295k.cc/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                "origin": "https://www.295k.cc"
+              },
+              "nestedUrlHeaders": {
+                "referer": "https://www.295k.cc/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
               }
             }
           },
