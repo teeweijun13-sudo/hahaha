@@ -1,18 +1,69 @@
 {
-  "exportedMediaSourceDataList": [
-    {
-      "name": "295k动漫",
-      "url": "https://www.295k.cc/",
-      "list": {
-        "list": ".module-items .module-item",
-        "title": ".module-poster-item-title",
-        "link": "a",
-        "cover": "img[data-original]"
-      },
-      "video": {
-        "play_url": "video[src]"
-      }
-    }
-  ]
-}
+  "exportedMediaSourceDataList": {
+    "mediaSources": [
+      {
+        "factoryId": "web-selector",
+        "version": 2,
+        "arguments": {
+          "name": "295k动漫",
+          "description": "采集295k动漫网站视频",
+          "iconUrl": "https://www.295k.cc/template/295k/favicon.ico",
+          "searchConfig": {
+            "searchUrl": "https://www.295k.cc/index.php/vod/search.html?wd={keyword}",
+            "searchUseOnlyFirstWord": true,
+            "searchRemoveSpecial": true,
+            "searchUseSubjectNamesCount": 1,
+            "rawBaseUrl": "https://www.295k.cc",
+            "requestInterval": 3000,
 
+            "subjectFormatId": "indexed",
+            "selectorSubjectFormatIndexed": {
+              "selectNames": ".module-item .module-poster-item-title",
+              "selectLinks": ".module-item a",
+              "preferShorterName": true
+            },
+
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatFlattened": {
+              "selectChannelNames": ".module-tab-item",
+              "matchChannelName": "^(?<ch>.+?)$",
+              "selectEpisodeLists": ".module-play-list",
+              "selectEpisodesFromList": "a",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])"
+            },
+
+            "selectorChannelFormatNoChannel": {
+              "selectEpisodes": ".module-play-list a",
+              "selectEpisodeLinks": "",
+              "matchEpisodeSortFromName": "(第\\s*(?<ep>.+)\\s*[话集])|1080P"
+            },
+
+            "defaultResolution": "1080P",
+            "defaultSubtitleLanguage": "CHS",
+            "onlySupportsPlayers": [],
+            "filterByEpisodeSort": true,
+            "filterBySubjectName": true,
+
+            "selectMedia": {
+              "distinguishSubjectName": true,
+              "distinguishChannelName": true
+            },
+
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(m3u8|mp4|bilivideo.com|player.*\\.php\\?url=)",
+              "cookies": "",
+              "addHeadersToVideo": {
+                "referer": "https://www.295k.cc",
+                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+              }
+            }
+          },
+          "tier": 0
+        }
+      }
+    ]
+  }
+}
