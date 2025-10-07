@@ -24,13 +24,10 @@
               "preferShorterName": true
             },
 
-            "channelFormatId": "index-grouped",
-           "selectorChannelFormatIndexGrouped": {
-  "selectChannelNames": ".module-tab-items .module-tab-item, .swiper-wrapper .module-tab-item, .hisSwiper .module-tab-item",
-  "matchChannelName": "([^<]+)",
-  "selectEpisodeLists": ".module-list.sort-list.tab-list",
-  "selectEpisodesFromList": ".module-play-list-link",
-  "selectEpisodeLinksFromList": "",
+            "channelFormatId": "no-channel",
+"selectorChannelFormatNoChannel": {
+  "selectEpisodes": ".module-play-list-link",
+  "selectEpisodeLinks": "",
   "matchEpisodeSortFromName": "第(\\d+)集"
 },
 
