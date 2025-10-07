@@ -52,15 +52,17 @@
             },
 
             "matchVideo": {
-              "enableNestedUrl": true,
-              "matchNestedUrl": ".module-play-list-link",
-              "matchVideoUrl": "(m3u8|mp4|player.*\\.php\\?url=)",
-              "cookies": "",
-              "addHeadersToVideo": {
-                "referer": "https://www.295k.cc",
-                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-              }
-            }
+  "enableNestedUrl": true,
+  "matchNestedUrl": ".module-play-list-link",
+  "matchVideoUrl": "#playleft",
+  "parseVideoFromIframeSrc": true,
+  "cookies": "",
+  "addHeadersToVideo": {
+    "referer": "https://www.295k.cc",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+  }
+}
+
           },
           "tier": 0
         }
@@ -68,3 +70,4 @@
     ]
   }
 }
+
