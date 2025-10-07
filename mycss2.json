@@ -25,14 +25,14 @@
             },
 
             "channelFormatId": "index-grouped",
-            "selectorChannelFormatIndexGrouped": {
-              "selectChannelNames": ".module-tab-items .module-tab-item, .swiper-wrapper .module-tab-item, .hisSwiper .module-tab-item",
-              "matchChannelName": "^(?:<span>)?([^<]+?)(?:</span>)?(?:<small.*?</small>)?$",
-              "selectEpisodeLists": ".his-tab-list, .play-tab-list, .module-list.sort-list.tab-list",
-              "selectEpisodesFromList": ".module-play-list-link",
-              "selectEpisodeLinksFromList": "",
-              "matchEpisodeSortFromName": "^(全集|HD高清|第\\s*(?<ep>[\\d.]+)\\s*[话集]|\\d+)$"
-            },
+           "selectorChannelFormatIndexGrouped": {
+  "selectChannelNames": ".module-tab-items .module-tab-item, .swiper-wrapper .module-tab-item, .hisSwiper .module-tab-item",
+  "matchChannelName": "([^<]+)",
+  "selectEpisodeLists": ".module-list.sort-list.tab-list",
+  "selectEpisodesFromList": ".module-play-list-link",
+  "selectEpisodeLinksFromList": "",
+  "matchEpisodeSortFromName": "第(\\d+)集"
+},
 
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link",
