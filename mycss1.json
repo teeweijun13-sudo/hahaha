@@ -1,0 +1,17 @@
+{
+  "sites": [
+    {
+      "name": "295k动漫",
+      "url": "https://www.295k.cc/",
+      "list": {
+        "list": ".module-items .module-item",
+        "title": ".module-poster-item-title",
+        "link": "a",
+        "cover": "img[data-original]"
+      },
+      "video": {
+        "play_url": "video[src]"
+      }
+    }
+  ]
+}
