@@ -18,26 +18,26 @@
 
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".module-card-item .module-card-item-title",
-              "selectLinks": ".module-card-item a",
+              "selectNames": ".module-card-item .module-card-item-title a",
+              "selectLinks": ".module-card-item a.module-card-item-poster",
               "selectCovers": ".module-card-item img[data-original]",
               "preferShorterName": true
             },
 
             "channelFormatId": "index-grouped",
-            "selectorChannelFormatFlattened": {
+            "selectorChannelFormatIndexGrouped": {
               "selectChannelNames": ".module-tab-item",
               "matchChannelName": "^(?<ch>.+?)$",
-              "selectEpisodeLists": ".module-play-list",
-              "selectEpisodesFromList": "a",
+              "selectEpisodeLists": ".module-list.sort-list.tab-list",
+              "selectEpisodesFromList": ".module-play-list-link",
               "selectEpisodeLinksFromList": "",
-              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])"
+              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(\\d+)"
             },
 
             "selectorChannelFormatNoChannel": {
-              "selectEpisodes": ".module-play-list a",
+              "selectEpisodes": ".module-play-list-link",
               "selectEpisodeLinks": "",
-              "matchEpisodeSortFromName": "(第\\s*(?<ep>.+)\\s*[话集])|1080P"
+              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(\\d+)"
             },
 
             "defaultResolution": "1080P",
