@@ -24,22 +24,31 @@
               "preferShorterName": true
             },
 
-            "channelFormatId": "no-channel",
+            "channelFormatId": "index-grouped",
+            "selectorChannelFormatIndexGrouped": {
+              "selectChannelNames": ".module-tab-items .module-tab-item, .swiper-wrapper .module-tab-item, .hisSwiper .module-tab-item",
+              "matchChannelName": "^(?:<span>)?([^<]+?)(?:</span>)?(?:<small.*?</small>)?$",
+              "selectEpisodeLists": ".his-tab-list, .play-tab-list, .module-list.sort-list.tab-list",
+              "selectEpisodesFromList": ".module-play-list-link",
+              "selectEpisodeLinksFromList": "",
+              "matchEpisodeSortFromName": "^(全集|HD高清|第\\s*(?<ep>[\\d.]+)\\s*[话集]|\\d+)$"
+            },
+
             "selectorChannelFormatNoChannel": {
-              "selectEpisodes": ".module-play-list-link:first-child",
+              "selectEpisodes": ".module-play-list-link",
               "selectEpisodeLinks": "",
-              "matchEpisodeSortFromName": ".*"
+              "matchEpisodeSortFromName": "^(全集|HD高清|第\\s*(?<ep>[\\d.]+)\\s*[话集]|\\d+)$"
             },
 
             "defaultResolution": "1080P",
             "defaultSubtitleLanguage": "CHS",
             "onlySupportsPlayers": [],
-            "filterByEpisodeSort": false,
-            "filterBySubjectName": false,
+            "filterByEpisodeSort": true,
+            "filterBySubjectName": true,
 
             "selectMedia": {
-              "distinguishSubjectName": false,
-              "distinguishChannelName": false
+              "distinguishSubjectName": true,
+              "distinguishChannelName": true
             },
 
             "matchVideo": {
