@@ -26,18 +26,18 @@
 
             "channelFormatId": "index-grouped",
             "selectorChannelFormatIndexGrouped": {
-              "selectChannelNames": ".module-tab-item",
+              "selectChannelNames": ".module-tab-items .module-tab-item",
               "matchChannelName": "^(?<ch>.+?)$",
               "selectEpisodeLists": ".module-list.sort-list.tab-list",
               "selectEpisodesFromList": ".module-play-list-link",
               "selectEpisodeLinksFromList": "",
-              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(\\d+)"
+              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(全集)"
             },
 
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link",
               "selectEpisodeLinks": "",
-              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(\\d+)"
+              "matchEpisodeSortFromName": "(第\\s*(?<ep>\\d+)\\s*[话集])|(全集)"
             },
 
             "defaultResolution": "1080P",
@@ -53,7 +53,7 @@
 
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "$^",
+              "matchNestedUrl": ".module-play-list-link",
               "matchVideoUrl": "(m3u8|mp4|player.*\\.php\\?url=)",
               "cookies": "",
               "addHeadersToVideo": {
