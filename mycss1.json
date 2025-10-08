@@ -39,7 +39,7 @@
             },
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "^.+\\.mp4.+"
+              "matchNestedUrl": "^.+\\.mp4.+",
               "matchVideoUrl": "<video[^>]+id=[\"']lelevideo[\"'][^>]+src=[\"']([^\"']+)[\"']",
               "cookies": "quality=1080",
               "addHeadersToVideo": {
@@ -51,5 +51,6 @@
     ]
   }
 }
+
 
 
