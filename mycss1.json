@@ -39,8 +39,8 @@
             },
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "src=\"([^\"]+danmu\\.yhdmjx\\.com/m3u8\\.php[^\"]+)\"",
-              "matchVideoUrl": "src=\"(https://v16-tiktokcdn-com[^\"]+\\.(mp4|m3u8)[^\"]*)\"",
+              "matchNestedUrl": "^.+(m3u8|danmu\\.yhdmjx).+\\?",
+              "matchVideoUrl": "(https://v16-tiktokcdn-com[^\"'\\s>]+)|(akamaized)",
               "cookies": "quality=1080P",
               "addHeadersToVideo": {
                 "referer": "https://danmu.yhdmjx.com/",
@@ -48,8 +48,8 @@
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
               },
               "nestedMatchConfig": {
-                "matchNestedUrl": "src=\"([^\"]+danmu\\.yhdmjx\\.com/m3u8\\.php[^\"]+)\"",
-                "matchVideoUrl": "src=\"(https://v16-tiktokcdn-com[^\"]+\\.(mp4|m3u8)[^\"]*)\"",
+               "matchNestedUrl": "(https?://[^\"'\\s]*danmu\\.yhdmjx\\.com/m3u8\\.php[^\"'\\s]*)",
+                "matchVideoUrl": "(https?://[^\"'\\s]*v16-tiktokcdn-com[^\"'\\s]*(\\.mp4|\\.m3u8)?[^\"'\\s]*)",
                 "nestedHeaders": {
                   "referer": "https://www.295k.cc/",
                   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
@@ -62,3 +62,4 @@
     ]
   }
 }
+
