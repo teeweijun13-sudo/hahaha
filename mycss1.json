@@ -38,22 +38,21 @@
               "distinguishChannelName": true
             },
             "matchVideo": {
-              "enableNestedUrl": false,
-              "matchNestedUrl": "",
-              "matchVideoUrl": "var\\s+player_aaaa\\s*=\\s*(\\{[^;]+\\});",
-              "decodeVideoUrl": {
-                "source": "json",
-                "path": "url",
-                "needUrlDecode": true
-              },
-              "cookies": "quality=1080",
-              "addHeadersToVideo": {
-                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-              }
-            }
+  "enableNestedUrl": true,
+  "matchNestedUrl": "^https?:\\/\\/v16-tiktokcdn-com\\.akamaized\\.net[^\\s\"']+\\.mp4",
+  "matchVideoUrl": "<video[^>]+id=[\"']lelevideo[\"'][^>]+src=[\"'](https?:\\/\\/v16-tiktokcdn-com\\.akamaized\\.net[^\"']+\\.mp4[^\"']*)[\"']",
+  "cookies": "quality=1080P",
+  "addHeadersToVideo": {
+    "referer": "https://www.295k.cc/",
+    "origin": "https://www.295k.cc",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+  }
+}
+
           }
         }
       }
     ]
   }
 }
+
