@@ -38,7 +38,7 @@
               "distinguishChannelName": true
             },
            "matchVideo": {
-  "enableNestedUrl": false,  
+  "enableNestedUrl": true,  
   "matchVideoUrl": "(https?:\\/\\/danmu\\.yhdmjx\\.com\\/m3u8\\.php\\?url=[^&]+)",
   "skipValidation": true,
   "cookies": "",
