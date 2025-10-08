@@ -39,7 +39,7 @@
             },
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php|\\.mp4).+"
+              "matchNestedUrl": "^.+\\.mp4.+"
               "matchVideoUrl": "<video[^>]+id=[\"']lelevideo[\"'][^>]+src=[\"']([^\"']+)[\"']",
               "cookies": "quality=1080",
               "addHeadersToVideo": {
@@ -51,4 +51,5 @@
     ]
   }
 }
+
 
