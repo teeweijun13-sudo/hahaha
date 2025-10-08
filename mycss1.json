@@ -41,7 +41,7 @@
   "enableNestedUrl": true,
   "matchNestedUrl": "(https?://[^\"'\\s]*danmu\\.yhdmjx\\.com/m3u8\\.php[^\"'\\s]*)",
   "loadNestedHtml": true,
-  "waitForNestedHtml": 8000,
+  "waitForNestedHtml": 20000,
   "matchVideoUrl": "(https?://[^\"'\\s]*(v16-tiktokcdn-com|akamaized\\.net)[^\"'\\s]*(\\.mp4|\\.m3u8)?[^\"'\\s]*)",
   "cookies": "quality=1080P",
   "addHeadersToVideo": {
@@ -56,5 +56,6 @@
     ]
   }
 }
+
 
 
