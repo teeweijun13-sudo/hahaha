@@ -39,7 +39,7 @@
             },
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "(https?:\\/\\/v16-tiktokcdn-com[^\"'\\s>]+)",
+              "matchNestedUrl": "$^",
               "matchVideoUrl": "(https?:\\/\\/v16-tiktokcdn-com[^\"'\\s>]+)",
               "cookies": "quality=1080P",
               "addHeadersToVideo": {
@@ -65,3 +65,4 @@
     ]
   }
 }
+
