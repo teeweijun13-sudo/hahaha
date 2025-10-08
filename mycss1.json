@@ -39,12 +39,10 @@
             },
           "matchVideo": {
   "enableNestedUrl": true,
-  "matchNestedUrl": "^https.*tiktokcdn.*",
-  "matchVideoUrl": "src=[\"'](https[^\"']*tiktokcdn[^\"']*)[\"']",
+  "matchNestedUrl": "$^",
+"matchVideoUrl": "(https[^\"']*tiktokcdn[^\"']*)"
   "cookies": "quality=1080P",
   "addHeadersToVideo": {
-    "referer": "https://www.295k.cc/",
-    "origin": "https://www.295k.cc",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
   }
 }
@@ -55,6 +53,7 @@
     ]
   }
 }
+
 
 
 
