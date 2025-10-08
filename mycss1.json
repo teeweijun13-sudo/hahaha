@@ -37,10 +37,10 @@
               "distinguishSubjectName": true,
               "distinguishChannelName": true
             },
-           "matchVideo": {
+          "matchVideo": {
   "enableNestedUrl": true,
-  "matchNestedUrl": "v16-tiktokcdn-com\\.akamaized\\.net.*\\.mp4",
-  "matchVideoUrl": "src=[\"'](https?:[^\"']*v16-tiktokcdn-com\\.akamaized\\.net[^\"']*\\.mp4[^\"']*)[\"']",
+  "matchNestedUrl": "^https.*tiktokcdn.*",
+  "matchVideoUrl": "src=[\"'](https[^\"']*tiktokcdn[^\"']*)[\"']",
   "cookies": "quality=1080P",
   "addHeadersToVideo": {
     "referer": "https://www.295k.cc/",
@@ -55,5 +55,6 @@
     ]
   }
 }
+
 
 
