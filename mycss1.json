@@ -37,23 +37,18 @@
               "distinguishSubjectName": true,
               "distinguishChannelName": true
             },
-          "matchVideo": {
-  "enableNestedUrl": true,
-  "matchNestedUrl": "$^",
-"matchVideoUrl": "(https[^\"']*tiktokcdn[^\"']*)"
-  "cookies": "quality=1080P",
-  "addHeadersToVideo": {
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-  }
-}
-
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchNestedUrl": "$^",
+              "matchVideoUrl": "(https[^\"']*tiktokcdn[^\"']*)",
+              "cookies": "quality=1080P",
+              "addHeadersToVideo": {
+                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+              }
+            }
           }
         }
       }
     ]
   }
 }
-
-
-
-
