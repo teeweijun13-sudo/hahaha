@@ -25,7 +25,7 @@
             "channelFormatId": "no-channel",
             "selectorChannelFormatNoChannel": {
               "selectEpisodes": ".module-play-list-link",
-              "selectEpisodeLinks": "a",
+              "selectEpisodeLinks": "",
               "matchEpisodeSortFromName": "第(\\d+)集"
             },
             "defaultResolution": "1080P",
@@ -39,13 +39,32 @@
             },
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "^.+(m3u8|danmu\\.yhdmjx).+\\?",
-              "matchVideoUrl": "(https://v16-tiktokcdn-com[^\"'\\s>]+)|(akamaized)",
+              "matchNestedUrl": "https://danmu\\.yhdmjx\\.com/m3u8\\.php\\?url=[^\"'\\s]+",
+              "matchVideoUrl": "https://v16-tiktokcdn-com[^\"'\\s>]+",
               "cookies": "quality=1080P",
               "addHeadersToVideo": {
                 "referer": "https://danmu.yhdmjx.com/",
                 "origin": "https://danmu.yhdmjx.com",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+              },
+              "nestedUrlConfig": {
+                "urlPattern": "https://www.295k.cc/dongman/{subjectId}-{playlistIndex}-1.html",
+                "urlFromEpisode": {
+                  "subjectId": "match:https://www\\.295k\\.cc/dongman/(\\d+)\\.html:1",
+                  "playlistIndex": "index"
+                },
+                "fallbackUrlPatterns": [
+                  "https://www.295k.cc/dongman/{subjectId}-1-1.html"
+                ],
+                "testUrl": "https://www.295k.cc/dongman/1661-1-1.html"
+              },
+              "nestedMatchConfig": {
+                "matchNestedUrl": "src=\"([^\"]+danmu\\.yhdmjx\\.com[^\"]+)\"",
+                "matchVideoUrl": "src=\"(https://v16-tiktokcdn-com[^\"]+)\"",
+                "nestedHeaders": {
+                  "referer": "https://www.295k.cc/",
+                  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+                }
               }
             }
           }
