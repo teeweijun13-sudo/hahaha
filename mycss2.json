@@ -37,17 +37,17 @@
               "distinguishSubjectName": true,
               "distinguishChannelName": true
             },
-           "matchVideo": {
-  "enableNestedUrl": true,  
-  "matchVideoUrl": "(https?:\\/\\/danmu\\.yhdmjx\\.com\\/m3u8\\.php\\?url=[^&]+)",
-  "skipValidation": true,
-  "cookies": "",
-  "addHeadersToVideo": {
-    "referer": "https://www.295k.cc/",  
-    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-    "origin": "https://www.295k.cc"  
-  }
-           }
+            "matchVideo": {
+              "enableNestedUrl": true,
+              "matchVideoUrl": "(https?:\\/\\/danmu\\.yhdmjx\\.com\\/m3u8\\.php\\?url=[^\"'\\s]+)",
+              "skipValidation": false,
+              "cookies": "",
+              "addHeadersToVideo": {
+                "referer": "https://www.295k.cc/",
+                "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "origin": "https://www.295k.cc"
+              }
+            }
           }
         }
       }
