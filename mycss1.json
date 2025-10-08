@@ -39,12 +39,12 @@
             },
             "matchVideo": {
               "enableNestedUrl": true,
-              "matchNestedUrl": "$^",
-              "matchVideoUrl": "(https?:\\/\\/v16-tiktokcdn-com[^\"'\\s>]+)",
+              "matchNestedUrl": "https://danmu\\.yhdmjx\\.com/m3u8\\.php\\?url=[^\"'\\s]+",
+              "matchVideoUrl": "https://v16-tiktokcdn-com[^\"'\\s>]+",
               "cookies": "quality=1080P",
               "addHeadersToVideo": {
-                "referer": "https://www.295k.cc/",
-                "origin": "https://www.295k.cc",
+                "referer": "https://danmu.yhdmjx.com/",
+                "origin": "https://danmu.yhdmjx.com",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
               },
               "nestedUrlConfig": {
@@ -57,6 +57,14 @@
                   "https://www.295k.cc/dongman/{subjectId}-1-1.html"
                 ],
                 "testUrl": "https://www.295k.cc/dongman/1661-1-1.html"
+              },
+              "nestedMatchConfig": {
+                "matchNestedUrl": "src=\"([^\"]+danmu\\.yhdmjx\\.com[^\"]+)\"",
+                "matchVideoUrl": "src=\"(https://v16-tiktokcdn-com[^\"]+)\"",
+                "nestedHeaders": {
+                  "referer": "https://www.295k.cc/",
+                  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+                }
               }
             }
           }
@@ -65,4 +73,3 @@
     ]
   }
 }
-
